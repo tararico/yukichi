@@ -3,9 +3,9 @@ module Yukichi
     def initialize(num)
       @num = num
       case num.class
-      when "String"
+      when String
         @num = num
-      when "Integer"
+      when Integer
         @num = num.to_arabic_numeral
       end
     end

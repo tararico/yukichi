@@ -18,7 +18,7 @@ module Yukichi
       end
     end
 
-    def jpy_comma(money_mark == false)
+    def jpy_comma(money_mark = false)
       if money_mark == true
         "¥" + @num.to_s.gsub(/(\d)(?=(\d{3})+(?!\d))/, '\1,')
       else

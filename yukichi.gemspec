@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{We divide numbers by commas every three digits.}
   spec.description   = %q{Yukichi is a Gem of money. Now I can only separate them with commas every 3 digits, but I will add a function to add a yen mark.}
-  spec.homepage      = "https://github.com/tatarico."
+  spec.homepage      = "https://github.com/tararico"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

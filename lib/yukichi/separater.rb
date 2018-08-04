@@ -1,3 +1,5 @@
+require 'convert_numeral'
+
 module Yukichi
   class Separater
     def initialize(num)

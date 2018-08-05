@@ -6,12 +6,12 @@ class Yukichi
   include Yukichi::Separater
   include Yukichi::Kanji
   def initialize(num)
-    @num = num
     case num.class
     when Integer
       @num = num
     when String
       @num = num.to_arabic_numeral
+      raise @num
     end
   end
 end

@@ -1,4 +1,5 @@
 require 'convert_numeral'
+
 class Yukichi
   module Separater
     def jpy_comma(money_mark = false)

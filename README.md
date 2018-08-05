@@ -22,7 +22,7 @@ Or install it yourself as:
     $ gem install yukichi
 
 ## Usage
-
+```
 Yukichi.new(1000).jpy_comma(false)
 # => 1,000
 Yukichi.new(1000).jpy_comma(true)
@@ -39,7 +39,7 @@ Yukichi.new("千").to_k(false)
 # => "千"
 Yukichi.new("千").to_k(true)
 # => "千円"
-
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

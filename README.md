@@ -1,9 +1,7 @@
 # Yukichi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yukichi`. To experiment with that code, run `bin/console` for an interactive prompt.
-
 You input Arabic numeral, put commas in every 3 digit and add Japanese yen if necessary.
-And if you input Chinese numerals convert Arabic numeral and the opposite operation is possible.
+And if you input Chinese numerals convert Arabic numeral, also the opposite operation is possible.
 
 ## Installation
 

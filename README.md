@@ -2,7 +2,8 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yukichi`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+You input Arabic numeral, put commas in every 3 digit and add Japanese yen if necessary.
+And if you input Chinese numerals convert Arabic numeral and the opposite operation is possible.
 
 ## Installation
 
@@ -22,7 +23,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Yukichi.new(1000).jpy_comma(false)
+# => 1,000
+Yukichi.new(1000).jpy_comma(true)
+# => ¥1,000
+Yukichi.new("千").jpy_comma(false)
+# => 1,000
+Yukichi.new("千").jpy_comma(true)
+# => "¥1,000"
+Yukichi.new(1000).to_k(false)
+# => "千"
+Yukichi.new(1000).to_k(true)
+# => "千円"
+Yukichi.new("千").to_k(false)
+# => "千"
+Yukichi.new("千").to_k(true)
+# => "千円"
 
 ## Development
 

@@ -1,5 +1,5 @@
 require 'convert_numeral'
-module Yukichi
+class Yukichi
   module Separater
     def jpy_comma(money_mark = false)
       if money_mark == true

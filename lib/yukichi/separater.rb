@@ -11,9 +11,9 @@ module Yukichi
         @num = num.to_arabic_numeral
       end
     end
-    	    
-    def to_k(money_mark = false) 
-      if money_mark # moneyマークがtrueなら"円"をつける
+      	    
+    def to_k(money_mark = false)
+      if money_mark
         @num.to_chinese_numeral + "円"
       else
         @num.to_chinese_numeral
@@ -26,6 +26,6 @@ module Yukichi
       else
         @num.to_s.gsub(/(\d)(?=(\d{3})+(?!\d))/, '\1,')
       end
-    end 
+    end
   end
 end

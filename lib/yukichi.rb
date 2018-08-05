@@ -1,6 +1,6 @@
 require 'yukichi/version'
 require 'yukichi/separater'
-require 'yuikchi/kanji'
+require 'yukchi/kanji'
 
 class Yukichi
   include Yukichi::Separater

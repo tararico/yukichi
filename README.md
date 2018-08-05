@@ -21,22 +21,14 @@ Or install it yourself as:
 
 ## Usage
 ```
-Yukichi.new(1000).jpy_comma(false)
-# => 1,000
-Yukichi.new(1000).jpy_comma(true)
-# => ¥1,000
-Yukichi.new("千").jpy_comma(false)
-# => 1,000
-Yukichi.new("千").jpy_comma(true)
-# => "¥1,000"
-Yukichi.new(1000).to_k(false)
-# => "千"
-Yukichi.new(1000).to_k(true)
-# => "千円"
-Yukichi.new("千").to_k(false)
-# => "千"
-Yukichi.new("千").to_k(true)
-# => "千円"
+Yukichi.new(5000000000000000).jpy_comma(true)
+# => ¥5,000,000,000,000,000"
+Yukichi.new("五千兆円").jpy_comma(true)
+# => "¥5,000,000,000,000,000"
+Yukichi.new(5000000000000000).to_k(true)
+# => "五千兆円"
+Yukichi.new("五千兆円").to_k(true)
+# => "五千兆円"
 ```
 ## Development
 
